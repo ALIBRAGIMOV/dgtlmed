@@ -35,7 +35,7 @@
                placeholder="Описание" >
       </div>
       <div>
-        <button @click="addTask">Сохранить</button>
+        <button class="saveButton" @click="addTask">Сохранить</button>
       </div>
     </div>
   </div>
@@ -83,6 +83,15 @@ export default {
   justify-content: center;
   align-items: center;
   flex-flow: column;
+  .saveButton{
+    background: #c3daffa3;
+    border: none;
+    border-radius: 12px;
+    padding: 7px;
+    cursor: pointer;
+    margin-top: 0.6rem;
+    font-size: 0.8rem;
+  }
   .deleteButtonContainer{
     display: flex;
     justify-content: flex-end;
